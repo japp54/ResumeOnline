@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ash-Resume</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='ind.css') }}" />
+<style type="text/css">
+.name
+	{
+		font-size: 70px;
+		color: white;
+	}
+.navbar
+	{
+	position:fixed;
+	}	
+ul 
+	{
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #333;
+	}
+li {float: left;}
+li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #111;
+}
+
+</style>
+</head>
+<body>
+<div class="hovereffect">
+    <img class="img" src="{{ url_for('static', filename='ashik.jpg') }}" alt="">
+    <div class="overlay">
+        <h2><span class="name">ASHIK POOVANNA</span></h2>
+	</div>
+</div>
+
+<div class="img1">	
+		<a href="https://in.linkedin.com/in/ashik-poovanna-979b66118"><img class="img1" src="{{ url_for('static', filename='li.png') }}" alt="linkedin"></a>
+</div>
+
+<div class="img2">	
+		<a href="https://github.com/yagamiash"><img class="img2" src="{{ url_for('static', filename='github.png') }}" alt="github"></a>
+</div>
+<div class='navbar'>
+	<ul>
+		<li><a href="#">About-me</a></li>
+		<li><a href="#">Skills</a></li>
+		<li><a href="#">Projects</a></li>
+	</ul>
+
+</div>
+
+</body>
+</html>
