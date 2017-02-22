@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<title>Ash-Resume</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='ind.css') }}" />
@@ -35,12 +36,39 @@ li a:hover
 {
     background-color: #111;
 }
+.aboutme
+{
+	position:absolute;
+	top:680px;
+	margin-left: 10%;
+	width:80%;
+	height:500px;
+	background-color: rgb(240,240,240);
+}
+.img-circle
+{
+	border-radius: 30%;
+	position: relative;
+	top:75px;
+	height: 25px;
+	width: 25px;
+	left:40%;
+	image-orientation:90deg;
+}
+.p1
+{
+	position: absolute;
+	left:10%;
+	top:400px;
+	font-size: 15px;
+}
+.h1{position: absolute;left:15%;}
 
 </style>
 </head>
-<body>
+<body style="margin:0; padding:0;">
 <div class="hovereffect">
-    <img class="img" src="{{ url_for('static', filename='hover.jpg') }}" alt="">
+    <img class="img" src="{{ url_for('static', filename='hover.jpg') }}" alt="joke">
     <div class="overlay">
         <h2><span class="name">ASHIK POOVANNA</span></h2>
 	</div>
@@ -55,12 +83,123 @@ li a:hover
 </div>
 <div class='navbar'>
 	<ul>
-		<li><a href="#">About-me</a></li>
-		<li><a href="#">Skills</a></li>
+		<li><a href="#lab_resume">About-me</a></li>
+		<li><a href="#skills">Skills</a></li>
 		<li><a href="#">Projects</a></li>
 	</ul>
-
 </div>
+
+<section id="lab_resume">
+    <div class="container">
+        <div class="row">
+        <!-- Resume Starts -->
+        <div class="resume">
+            <!-- Sidebar -->
+            <div class="r-sidebar">
+                <div class="r-sidebar-item">
+                    <!-- Sidebar Image (in /images folder) -->
+                    <div class="img">
+                     <img class="img" src="{{ url_for('static', filename='ashik.jpg') }}" alt="ashik">
+                        
+                    </div>
+                    <!-- Name -->
+                    <div class="name">
+                        <h3>Ashik Poovanna</h3>
+                        <small>Student Developer</small>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- Detail -->
+                <div class="r-detail">
+                    <table> 
+                        <tr>
+                            <th>Name</th>
+                            <td>Ashik Poovanna</td>
+                        </tr>
+                        <tr>
+                            <th>D.O.B</th>
+                            <td>Oct 1st 1997</td>
+                        </tr>
+                        <tr>
+                            <th>Age</th>
+                            <td>20 Yrs</td>
+                        </tr>
+                        <tr>
+                            <th>Qualification</th>
+                            <td>pursuing B.Tech(CSE)-PES University</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>ashobot@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Location</th>
+                            <td>Bangalore,India</td>
+                        </tr>
+                    </table>
+                </div>
+               
+            </div>
+        
+        <!-- Main -->
+            <div class="main-block">
+                <div class="objective">
+                    <h3>Welcome</h3>
+                    <div class="objective-content">
+                        <p>Hi!, I'm Ashik, I'm interested in understanding the concepts behind numerous Machine Learning models.Also like to
+explore the vast applications of ML and AI in the Tech Universe.
+Also interested in the field of Data Science.The possibilities in this field fascinates me 
+and grasping each of its sub processes is my current focus. </p>
+                    </div>
+                </div>
+                <hr>
+                <!-- Skill -->
+                <div class="skill">
+                    <h3>Skills</h3>
+                    <!-- Skill Content -->
+                    <div class="skill-content" id="skills">
+                        <span class="big-circle">Python<span class="small-circle bg-white">85</span></span>
+                        <span class="big-circle">JavaScript<span class="small-circle bg-white">70</span></span>
+                        <span class="big-circle">C<span class="small-circle bg-white">70</span></span>
+                        <span class="big-circle">ML<span class="small-circle bg-white">60</span></span>
+                        <span class="big-circle">Algoritms<span class="small-circle bg-white">50</span></span>
+                        <span class="big-circle">Web-Tech<span class="small-circle bg-white">70</span></span>
+                    </div>
+                </div>
+                <hr>
+ <!-- Education -->
+                <div class="education">
+                    <h3>Education</h3>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4">
+                            <!-- Education Item -->
+                            <div class="education-item">
+                                <h6>[ 2003 - 2013 ]</h6>
+                                <h4>Matriculation</h4>
+                                <p>Completed matriculation with a GP of 10 from Atomic Energy School,Mysore.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <!-- Education Item -->
+                            <div class="education-item">
+                                <h6>[ 2013 - 2015 ]</h6>
+                                <h4>Pre-University</h4>
+                                <p>Completed Pre-University from AECS MMPS,Bangalore(Percentage=90)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <!-- Education Item -->
+                            <div class="education-item">
+                                <h6>[ 2015 - 2019 ]</h6>
+                                <h4>B.Tech(CSE)</h4>
+                                <p>Pursuing my computer science B.Tech from PES University,Bangalore.</p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <hr>
+ </section>           
 
 </body>
 </html>
