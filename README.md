@@ -27,6 +27,6 @@ The link which deals with these instructions-https://signup.heroku.com/dc
 
 # My resume website
 
-Link->  ash-resume.herokuapp.com  
+Link->  https://ash-resume.herokuapp.com  
 
 (I still have to add my projects)  
