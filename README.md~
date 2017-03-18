@@ -1,9 +1,7 @@
 # ResumeOnline
 
-This tutorial will help you deploy a Python app (a simple Flask app) in minutes.
-The example here is of deploying your resume age in Heroku.
-
-Its a python based project by making use of Flask microframe work.
+## This tutorial will help you deploy a Python app (a simple Flask app) in minutes.
+__ Its a python based project by making use of Flask microframe work. __
 
 #Heroku
 Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
@@ -27,6 +25,6 @@ The link which deals with these instructions-https://signup.heroku.com/dc
 
 # My resume website
 
-Link->  https://ash-resume.herokuapp.com/  
+Link->  https://ash-resume.herokuapp.com  
 
 (I still have to add my projects)  
