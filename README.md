@@ -1,15 +1,16 @@
 # ResumeOnline
 
-## This tutorial will help you deploy a Python app (a simple Flask app) in minutes.
-__ Its a python based project by making use of Flask microframe work. __
+## This tutorial will help you deploy a Python conttolled web-app (a simple Flask app) in minutes.
+Its a python based project by making use of Flask microframe work.
 
 #Heroku
 
-__ Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
-It rents an AWS and partitions it to smaller virual severs that can each house an app.
-It focuses more on addons. __
+Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
-__ You will have to create a Heroku account before you can get started(its FREE).__
+It rents an AWS and partitions it to smaller virual severs that can each house an app.
+It focuses more on addons.
+
+You will have to create a Heroku account before you can get started(its FREE).
 
 The link which deals with these instructions-https://signup.heroku.com/dc
 
@@ -26,8 +27,10 @@ The link which deals with these instructions-https://signup.heroku.com/dc
 
 (5)A Procfile is a mechanism for declaring what commands are run by your application’s dynos on the Heroku platform.
 
-# My resume website
+## The final step is to push your project to Heroku instead of git(set remote to Heroku).
 
-__ Link->  https://ash-resume.herokuapp.com __  
+
+# My resume website
+Link->  https://ash-resume.herokuapp.com   
 
 (*I still have to add my projects in my resume.)  
