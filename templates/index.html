@@ -1,205 +1,117 @@
-<!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<title>Ash-Resume</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='ind.css') }}" />
-<style type="text/css">
-.name
-	{
-		font-size: 40px;
-		color: white;
-	}
-.navbar
-	{
-	position:fixed;
-	}	
-ul 
-	{
-    	list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	overflow: hidden;
-    	background-color: #333;
-	}
-li {float: left;}
-li a 
-{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover 
-{
-    background-color: #111;
-}
-.aboutme
-{
-	position:absolute;
-	top:680px;
-	margin-left: 10%;
-	width:80%;
-	height:500px;
-	background-color: rgb(240,240,240);
-}
-.img-circle
-{
-	border-radius: 30%;
-	position: relative;
-	top:75px;
-	height: 25px;
-	width: 25px;
-	left:40%;
-	image-orientation:90deg;
-}
-.p1
-{
-	position: absolute;
-	left:10%;
-	top:400px;
-	font-size: 15px;
-}
-.h1{position: absolute;left:15%;}
-
-</style>
+  <title>portfolio</title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+<link rel="stylesheet" href="{{ url_for('static', filename='ind.css') }}" />  
 </head>
-<body style="margin:0; padding:0;">
-<div class="hovereffect">
-    <img class="img" src="{{ url_for('static', filename='hover.jpg') }}" alt="joke">
-    <div class="overlay">
-        <h2><span class="name">ASHIK POOVANNA</span></h2>
+<body background="{{ url_for('static', filename='bg.png') }}">
+
+</script>
+	<div>
+		<a href="https://in.linkedin.com/in/ashik-poovanna-979b66118">
+			<img class="links1" src="{{ url_for('static', filename='linkedin.png') }}"
+			onmouseover="this.src='{{ url_for('static', filename='linkedin1.png') }}'"
+			onmouseout="this.src='{{ url_for('static', filename='linkedin.png') }}'"
+			/>
+		</a>
+    	<a href="https://github.com/yagamiash/">
+    		<img class="links2" src="{{ url_for('static', filename='github.png') }}"
+    		onmouseover="this.src='{{ url_for('static', filename='github1.png') }}'"
+			onmouseout="this.src='{{ url_for('static', filename='github.png') }}'"
+    		/>
+    	</a>
+    	<a href="https://twitter.com/AshikAshobot">
+    		<img class="links3" src="{{ url_for('static', filename='twitter.png') }}"
+    		onmouseover="this.src='{{ url_for('static', filename='twitter1.png') }}'"
+			onmouseout="this.src='{{ url_for('static', filename='twitter.png') }}'"
+    		/>
+    	</a>
 	</div>
-</div>
+	<div class="mainheader"><div class="a">Software is a great combination between  </div>	artistry and engineering.</div>
+	<div class="mainheader1">SO AM I...</div>
+	<span class="s0">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+	<div class="Header"> WHO AM I?</div>
+	<div class="Header2"> SKILLSET</div>
+	<div class="Header3"> PROJECTS</div>
+	<div class="Header4"> ACHIEVEMENTS</div>
+	<div class="who">Get to know me</div>	
+	<div class="who2">I am good at</div>
+	<div class="who3">My Mini-Projects</div>
+	<div class="who4">Looking forward for more</div>
+	<div class="ash"><img src="{{ url_for('static', filename='ashik.jpg') }}"/></div>	 		
+	<div class="aboutme">		
+	<pre>
+		Hi, I'm Ashik Poovanna,
 
-<div class="img1">	
-		<a href="https://in.linkedin.com/in/ashik-poovanna-979b66118"><img class="img1" src="{{ url_for('static', filename='li.png') }}" alt="linkedin"></a>
-</div>
+		I am currently pursuing my CS
+		undergrad from PESU,Bangalore.
+		
+		The fields in Computer Science that 
+		fascinate me the most are Data science,
+		Machine Learning & AI.I am building up my 
+		skillset in these domains.
+		
 
-<div class="img2">	
-		<a href="https://github.com/yagamiash"><img class="img2" src="{{ url_for('static', filename='github.png') }}" alt="github"></a>
-</div>
-<div class='navbar'>
-	<ul>
-		<li><a href="#lab_resume">About-me</a></li>
-		<li><a href="#skills">Skills</a></li>
-		<li><a href="#">Projects</a></li>
-	</ul>
-</div>
-
-<section id="lab_resume">
-    <div class="container">
-        <div class="row">
-        <!-- Resume Starts -->
-        <div class="resume">
-            <!-- Sidebar -->
-            <div class="r-sidebar">
-                <div class="r-sidebar-item">
-                    <!-- Sidebar Image (in /images folder) -->
-                    <div class="img">
-                     <img class="img" src="{{ url_for('static', filename='ashik.jpg') }}" alt="ashik">
-                        
-                    </div>
-                    <!-- Name -->
-                    <div class="name">
-                        <h3>Ashik Poovanna</h3>
-                        <small>Student Developer</small>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <!-- Detail -->
-                <div class="r-detail">
-                    <table> 
-                        <tr>
-                            <th>Name</th>
-                            <td>Ashik Poovanna</td>
-                        </tr>
-                        <tr>
-                            <th>D.O.B</th>
-                            <td>Oct 27th 1997</td>
-                        </tr>
-                        <tr>
-                            <th>Age</th>
-                            <td>19 Yrs</td>
-                        </tr>
-                        <tr>
-                            <th>Qualification</th>
-                            <td>pursuing B.Tech(CSE)-PES University</td>
-                        </tr>
-                        <tr>
-                            <th>Email</th>
-                            <td>ashobot@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <th>Location</th>
-                            <td>Bangalore,India</td>
-                        </tr>
-                    </table>
-                </div>
-               
-            </div>
-        
-        <!-- Main -->
-            <div class="main-block">
-                <div class="objective">
-                    <h3>Welcome</h3>
-                    <div class="objective-content">
-                        <p>Hi!, I'm Ashik, I'm interested in understanding the concepts behind numerous Machine Learning models.Also like to
-explore the vast applications of ML and AI in the Tech Universe.
-Also interested in the field of Data Science.The possibilities in this field fascinates me 
-and grasping each of its sub processes is my current focus. </p>
-                    </div>
-                </div>
-                <hr>
-                <!-- Skill -->
-                <div class="skill">
-                    <h3>Skills</h3>
-                    <!-- Skill Content -->
-                    <div class="skill-content" id="skills">
-                        <span class="big-circle">Python<span class="small-circle bg-white">85</span></span>
-                        <span class="big-circle">JavaScript<span class="small-circle bg-white">70</span></span>
-                        <span class="big-circle">C<span class="small-circle bg-white">70</span></span>
-                        <span class="big-circle">ML<span class="small-circle bg-white">60</span></span>
-                        <span class="big-circle">Algoritms<span class="small-circle bg-white">60</span></span>
-                        <span class="big-circle">Web-Tech<span class="small-circle bg-white">70</span></span>
-                    </div>
-                </div>
-                <hr>
- <!-- Education -->
-                <div class="education">
-                    <h3>Education</h3>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4">
-                            <!-- Education Item -->
-                            <div class="education-item">
-                                <h6>[ 2003 - 2013 ]</h6>
-                                <h4>Matriculation</h4>
-                                <p>Completed matriculation with a GP of 10 from Atomic Energy School,Mysore.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <!-- Education Item -->
-                            <div class="education-item">
-                                <h6>[ 2013 - 2015 ]</h6>
-                                <h4>Pre-University</h4>
-                                <p>Completed Pre-University from AECS MMPS,Bangalore(Percentage=90)</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-4">
-                            <!-- Education Item -->
-                            <div class="education-item">
-                                <h6>[ 2015 - 2019 ]</h6>
-                                <h4>B.Tech(CSE)</h4>
-                                <p>Pursuing my computer science B.Tech from PES University,Bangalore.</p>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-                <hr>
- </section>           
-
+		If you are looking for someone to integrate
+		learning and decision making models 
+		to your applications or analysing raw data,
+		thats where I come in.I have arround 
+		1-year experience in these domains. 
+	</pre>
+	</div>
+	
+	<div class="skillbar clearfix " data-percent="20%">
+		<div class="skillbar-title" style="background: yellow;"><span>Python</span></div>
+		<div class="skillbar-bar" style="background: #e67e22;"></div>
+		<div class="skill-bar-percent"></div>
+	</div> <!-- End Skill Bar -->
+	<div class="skillbar clearfix " data-percent="20%">
+		<div class="skillbar-title" style="background:  yellow;"><span>C</span></div>
+		<div class="skillbar-bar" style="background: #e67e22;"></div>
+		<div class="skill-bar-percent"></div>
+	</div> <!-- End Skill Bar -->
+	<div class="skillbar clearfix " data-percent="20%">
+		<div class="skillbar-title" style="background:  yellow;"><span>R</span></div>
+		<div class="skillbar-bar" style="background: #e67e22;"></div>
+		<div class="skill-bar-percent"></div>
+	</div> <!-- End Skill Bar -->
+	<div class="skillbar clearfix " data-percent="20%">
+		<div class="skillbar-title" style="background:  yellow;"><span>Data Structures</span></div>
+		<div class="skillbar-bar" style="background: #e67e22;"></div>
+		<div class="skill-bar-percent"></div>
+	</div> <!-- End Skill Bar -->	
+	<div class="skillbar clearfix " data-percent="20%">
+		<div class="skillbar-title" style="background:  yellow;"><span>Algorithms</span></div>
+		<div class="skillbar-bar" style="background: #e67e22;"></div>
+		<div class="skill-bar-percent"></div>
+	</div> <!-- End Skill Bar -->	
+	<div class="skillbar clearfix " data-percent="20%">
+		<div class="skillbar-title" style="background:  yellow;"><span>ML</span></div>
+		<div class="skillbar-bar" style="background: #e67e22;"></div>
+		<div class="skill-bar-percent"></div>
+	</div> <!-- End Skill Bar -->	
+	
+	<span class="s1">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+	<div class="proj">
+		<a href="https://github.com/yagamiash/EcommDB"> 
+			EcommDB 
+		</a> :DBMS Flask based Ecommerce web app interacting with postgresql database<br/><br/>
+		<a href="https://github.com/yagamiash/twelisis"> 
+			Twelisis
+		</a>:A python pypi package that aims at abstraction of Twitter Tweets Extraction.<br/><br/>
+		<a href="https://github.com/yagamiash/GetNoisy"> 
+			GetNoisy
+		</a>:Analysis of characteristics of noise to apply proper denoising techniques.<br/><br/>		
+		<a href="https://github.com/yagamiash/ResumeOnline"> 
+			Resume-Online
+		</a>:Deployment of a flask based web application in Heroku.	
+	</div>	
+	<div class="award">
+	<img src="{{ url_for('static', filename='award.png') }}"/>
+	</div>
+	<div class="award1">
+		Winners Lions Quest (2012)<br/>
+		Topped-Economics in Pre-University (2013)
+	</div>
+	<span class="s2">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
 </body>
-</html>

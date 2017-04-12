@@ -1,66 +1,66 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Ash-Resume</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='ind.css') }}" />
-<style type="text/css">
-.name
-	{
-		font-size: 40px;
-		color: white;
+  <title>portfolio</title>
+  <style>
+  .links1{
+    position: absolute;
+    height: 80px;
+    width:80px;
+    left:10%;
+  }
+  .links2{
+    position: absolute;
+    height:80px;
+    width:80px;
+    left:20%;
+  }
+  .links3{
+    position: absolute;
+    height:80px;
+    width:80px;
+    left:30%;
+  }
+  .header{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-family: Georgia;
+    font-style: italic;
+	font-size:100px;
+	
+  }
+  .who{
+	position: absolute;
+    top: 45%;
+    left: 15%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+	font-size:50px;
+	color:orange;	
 	}
-.navbar
-	{
-	position:fixed;
-	}	
-ul 
-	{
-    	list-style-type: none;
-    	margin: 0;
-    	padding: 0;
-    	overflow: hidden;
-    	background-color: #333;
+
+	.ash{
+	position: absolute;
+    top: 60%;
+    left: 15%;
+	padding:20px;
+	height:200px;
+	width:200px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+	font-size:50px;
+	color:orange;
+	border:2px solid black;	
 	}
-li {float: left;}
-li a 
-{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover 
-{
-    background-color: #111;
-}
-
-</style>
+  </style>
 </head>
-<body>
-<div class="hovereffect">
-    <img class="img" src="{{ url_for('static', filename='hover.jpg') }}" alt="">
-    <div class="overlay">
-        <h2><span class="name">ASHIK POOVANNA</span></h2>
-	</div>
-</div>
-
-<div class="img1">	
-		<a href="https://in.linkedin.com/in/ashik-poovanna-979b66118"><img class="img1" src="{{ url_for('static', filename='li.png') }}" alt="linkedin"></a>
-</div>
-
-<div class="img2">	
-		<a href="https://github.com/yagamiash"><img class="img2" src="{{ url_for('static', filename='github.png') }}" alt="github"></a>
-</div>
-<div class='navbar'>
-	<ul>
-		<li><a href="#">About-me</a></li>
-		<li><a href="#">Skills</a></li>
-		<li><a href="#">Projects</a></li>
-	</ul>
-
-</div>
-
+<body background="{{ url_for('static', filename='img1.gif') }}">
+  <div>
+    <a href="https://in.linkedin.com/in/ashik-poovanna-979b66118"><img class="links1" src="{{ url_for('static', filename='linkedin.png') }}"/></a>
+    <a href="https://github.com/yagamiash/"><img class="links2" src="{{ url_for('static', filename='github.png') }}"/></a>
+    <a href=""><img class="links3" src="{{ url_for('static', filename='twitter.png') }}"/></a>
+  </div>
+  <div class="Header"> WHO AM I?</div>
+  <div class="who">Get to know me</div>	
+  <div class="ash"><img src="{{ url_for('static', filename='ashik.jpg') }}"/></div>	 		
 </body>
-</html>
