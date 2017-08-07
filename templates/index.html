@@ -1,117 +1,48 @@
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='ind.css') }}" />  
+<style>
+
+ul {
+	position: absolute;
+	top:25%;
+	left:5%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:{
+    background-color:darkblue;
+}
+
+</style> 
 </head>
-<body background="{{ url_for('static', filename='bg.png') }}">
+<body>
+<ul>
+  <li><a href="https://github.com/yagamiash/"><img src="{{ url_for('static', filename='github.png') }}" width="30" height="30"/></a></li>
+  <li><a href="https://in.linkedin.com/in/ashik-poovanna-979b66118"><img src="{{ url_for('static', filename='linkedin.png') }}" width="30" height="30"/></a></li>
+  <li><a href="https://twitter.com/AshikAshobot"><img src="{{ url_for('static', filename='twitter.png') }}" width="30" height="30"/></a></li>
+</ul>
 
-</script>
-	<div>
-		<a href="https://in.linkedin.com/in/ashik-poovanna-979b66118">
-			<img class="links1" src="{{ url_for('static', filename='linkedin.png') }}"
-			onmouseover="this.src='{{ url_for('static', filename='linkedin1.png') }}'"
-			onmouseout="this.src='{{ url_for('static', filename='linkedin.png') }}'"
-			/>
-		</a>
-    	<a href="https://github.com/yagamiash/">
-    		<img class="links2" src="{{ url_for('static', filename='github.png') }}"
-    		onmouseover="this.src='{{ url_for('static', filename='github1.png') }}'"
-			onmouseout="this.src='{{ url_for('static', filename='github.png') }}'"
-    		/>
-    	</a>
-    	<a href="https://twitter.com/AshikAshobot">
-    		<img class="links3" src="{{ url_for('static', filename='twitter.png') }}"
-    		onmouseover="this.src='{{ url_for('static', filename='twitter1.png') }}'"
-			onmouseout="this.src='{{ url_for('static', filename='twitter.png') }}'"
-    		/>
-    	</a>
-	</div>
-	<div class="mainheader"><div class="a">Software is a great combination between  </div>	artistry and engineering.</div>
-	<div class="mainheader1">SO AM I...</div>
-	<span class="s0">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
-	<div class="Header"> WHO AM I?</div>
-	<div class="Header2"> SKILLSET</div>
-	<div class="Header3"> PROJECTS</div>
-	<div class="Header4"> ACHIEVEMENTS</div>
-	<div class="who">Get to know me</div>	
-	<div class="who2">I am good at</div>
-	<div class="who3">My Mini-Projects</div>
-	<div class="who4">Looking forward for more</div>
-	<div class="ash"><img src="{{ url_for('static', filename='ashik.jpg') }}"/></div>	 		
-	<div class="aboutme">		
-	<pre>
-		Hi, I'm Ashik Poovanna,
+<img src="{{ url_for('static', filename='ash_july17.png') }}">
 
-		I am currently pursuing my CS
-		undergrad from PESU,Bangalore.
-		
-		The fields in Computer Science that 
-		fascinate me the most are Data science,
-		Machine Learning & AI.I am building up my 
-		skillset in these domains.
-		
 
-		If you are looking for someone to integrate
-		learning and decision making models 
-		to your applications or analysing raw data,
-		thats where I come in.I have arround 
-		1-year experience in these domains. 
-	</pre>
-	</div>
-	
-	<div class="skillbar clearfix " data-percent="20%">
-		<div class="skillbar-title" style="background: yellow;"><span>Python</span></div>
-		<div class="skillbar-bar" style="background: #e67e22;"></div>
-		<div class="skill-bar-percent"></div>
-	</div> <!-- End Skill Bar -->
-	<div class="skillbar clearfix " data-percent="20%">
-		<div class="skillbar-title" style="background:  yellow;"><span>C</span></div>
-		<div class="skillbar-bar" style="background: #e67e22;"></div>
-		<div class="skill-bar-percent"></div>
-	</div> <!-- End Skill Bar -->
-	<div class="skillbar clearfix " data-percent="20%">
-		<div class="skillbar-title" style="background:  yellow;"><span>R</span></div>
-		<div class="skillbar-bar" style="background: #e67e22;"></div>
-		<div class="skill-bar-percent"></div>
-	</div> <!-- End Skill Bar -->
-	<div class="skillbar clearfix " data-percent="20%">
-		<div class="skillbar-title" style="background:  yellow;"><span>Data Structures</span></div>
-		<div class="skillbar-bar" style="background: #e67e22;"></div>
-		<div class="skill-bar-percent"></div>
-	</div> <!-- End Skill Bar -->	
-	<div class="skillbar clearfix " data-percent="20%">
-		<div class="skillbar-title" style="background:  yellow;"><span>Algorithms</span></div>
-		<div class="skillbar-bar" style="background: #e67e22;"></div>
-		<div class="skill-bar-percent"></div>
-	</div> <!-- End Skill Bar -->	
-	<div class="skillbar clearfix " data-percent="20%">
-		<div class="skillbar-title" style="background:  yellow;"><span>ML</span></div>
-		<div class="skillbar-bar" style="background: #e67e22;"></div>
-		<div class="skill-bar-percent"></div>
-	</div> <!-- End Skill Bar -->	
-	
-	<span class="s1">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
-	<div class="proj">
-		<a href="https://github.com/yagamiash/EcommDB"> 
-			EcommDB 
-		</a> :DBMS Flask based Ecommerce web app interacting with postgresql database<br/><br/>
-		<a href="https://github.com/yagamiash/twelisis"> 
-			Twelisis
-		</a>:A python pypi package that aims at abstraction of Twitter Tweets Extraction.<br/><br/>
-		<a href="https://github.com/yagamiash/GetNoisy"> 
-			GetNoisy
-		</a>:Analysis of characteristics of noise to apply proper denoising techniques.<br/><br/>		
-		<a href="https://github.com/yagamiash/ResumeOnline"> 
-			Resume-Online
-		</a>:Deployment of a flask based web application in Heroku.	
-	</div>	
-	<div class="award">
-	<img src="{{ url_for('static', filename='award.png') }}"/>
-	</div>
-	<div class="award1">
-		Winners Lions Quest (2012)<br/>
-		Topped-Economics in Pre-University (2013)
-	</div>
-	<span class="s2">-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+
 </body>
